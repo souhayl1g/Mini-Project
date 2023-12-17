@@ -4,29 +4,47 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SG Engineering</title>
-		<link rel="stylesheet"type="text/css"href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!-- box icons links -->
-		<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+		/>
 		<!-- remix icons links-->
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 		<!--Goolgle fonts link-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<!--header-->
 
 		<header>
-			<a href="#" class="logo"
-				><span>E</span>mbedded <span>S</span>ystems <span>E</span>ngineer<span>.</span>
+			<a href="#" class="logo">
+				<span>E</span>mbedded <span>S</span>ystems <span>E</span>ngineer and a
+				<span>UX</span> / <span>UI</span><span> D</span>esigner<span>.</span>
 			</a>
 			<div class="bx bx-menu" id="menu-icon"></div>
 			<ul class="navlist">
-				<ul><a href="index.html">Home</a></ul>
-				<ul><a href="Projects.html">Projects</a></ul>
-				<ul><a href="Portfolio.html">Portfolio</a></ul>
-				<ul><a href="Contact.html">Contact</a></ul>
+				<ul>
+					<a href="index.html">Home</a>
+				</ul>
+				<ul>
+					<a href="Projects.html">Projects</a>
+				</ul>
+				<ul>
+					<a href="Portfolio.html">Portfolio</a>
+				</ul>
+				<ul>
+					<a href="Contact.html">Contact</a>
+				</ul>
 			</ul>
 			<div class="top-btnn">
 				<a href="#" class="h-btn"> Contact Me</a>
@@ -36,17 +54,32 @@
 			<div class="center-text">
 				<h2>Contact <span>Me</span></h2>
 			</div>
-			<div class="contact-form">
-				<form action="">
-					<input type="text" placeholder="Your Name" required>
-					<input type="email" placeholder="Email Adress.." required>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
-					<input type="submit" name="" value="Send Message" class="send-btn">
+			<div>
+				<form id="myForm">
+					<label for="nom">Nom :</label>
+					<span id="nomError" class="error"></span>
+					<input type="text" id="nom" name="nom" /><br />
+
+					<label for="prenom">Prénom :</label>
+					<span id="prenomError" class="error"></span>
+					<input type="text" id="prenom" name="message" /><br />
+
+					<label for="message">Message :</label>
+					<span id="messageError" class="error"></span>
+					<input type="text" id="message" name="message" /><br />
+
+					<label for="telephone">Téléphone :</label>
+					<span id="telephoneError" class="error"></span>
+					<input type="text" id="telephone" name="telephone" /><br />
+					<label for="telephone">email :</label>
+					<span id="emailError" class="error"></span>
+					<input type="text" id="email" name="email" /><br />
+
+					<button type="button" id="submitButton">Submit</button>
 				</form>
-
 			</div>
-
+			<div id="errorContainer" class="error"></div>
 		</section>
 		<script src="js/script.js"></script>
-		</body>
-	</html>
+	</body>
+</html>
